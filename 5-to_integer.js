@@ -1,9 +1,8 @@
 const arg = process.argv[2];
+const number = parseInt(arg);
 
-if (arg == !NaN) {
-  console.log("My number: " + arg);
-} else if (parseInt(arg) == !NaN) {
-  console.log("My number: " + parseInt(arg));
+if (isNaN(number)) {
+  console.log("Not a number");
 } else {
-  console.log(toString(arg));
+  console.log("My number: " + number);
 }
